@@ -1,6 +1,6 @@
-from services.search import search_company
-from services.gpt import generate_message
-from services.email import send_email
+from app.services.search import search_company
+from app.services.gpt import generate_message
+from app.services.email import send_email
 
 def process_lead(name, company, role, email):
  # Step 1: Research company
@@ -18,7 +18,7 @@ def process_lead(name, company, role, email):
     # send_email(email, f"Hello {name}, Let's Collaborate!", message)
 
 # Add one piece of sample data
-process_lead("Andrew Vardell", "Scout Motors", "Strategy",)
+process_lead("Andrew Vardell", "Scout Motors", "Strategy", "no email")
 
 # Lead details
 name = "Jane Doe"
